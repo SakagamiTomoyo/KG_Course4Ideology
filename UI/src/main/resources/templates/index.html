@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="header">
+            <h1>计算机课程思政知识图谱</h1>
+            <label>
+                <input type="text" v-model="keyword" v-on:keyup.enter="search_content">
+            </label>
+            <button v-on:click="search_content">search</button>
+        </div>
+        <HR>
+        <div id="doc">
+            <h2>{{left_title}}</h2>
+            <div id="doc-top"></div>
+            <HR>
+            <div id="doc-left"></div>
+            <div id="doc-right"></div>
+            <div id="doc-mid"></div>
+        </div>
+        <div id="footer">
+            <hr>
+            &copy;
+            <a href="https://github.com/01joy/news-search-engine" target="_blank">https://github.com/01joy/news-search-engine</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/static/js/kg_fun.js"></script>
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-nightly@5.1.2-dev.20210512/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+
+    <script>
+        var dom = document.getElementById("doc-right");
+        var myChart = echarts.init(dom);
+    </script>
+
+</body>
+
+</html>

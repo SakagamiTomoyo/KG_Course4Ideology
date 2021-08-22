@@ -1,0 +1,115 @@
+#header {
+    text-align: center;
+    position: relative;
+    float: top;
+    height: 15%;
+    width: 100%;
+}
+
+#doc {
+    position: relative;
+    width: 100%;
+}
+
+#doc-top {
+    position: relative;
+    min-height: 100px;
+    max-height: 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+#doc-top::-webkit-scrollbar {
+    width : 10px;
+    height: 1px;
+}
+
+#doc-left {
+    float: left;
+    min-height: 800px;
+    max-height: 800px;
+    width: 400px;
+    background-color: #ffffff;
+    overflow: scroll;
+}
+#doc-left::-webkit-scrollbar {
+    width : 10px;
+    height: 1px;
+}
+#doc-left::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius   : 10px;
+    background-color: #87ceeb;
+    background-image: -webkit-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent
+    );
+}
+#doc-left::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background   : #ededed;
+    border-radius: 10px;
+}
+
+#doc-mid {
+    background-color: #ffffff;
+    min-height: 800px;
+    max-height: 800px;
+    margin-left:400px;
+    margin-right:800px;
+    border-style: hidden solid hidden solid;
+    border-color: #9e9ea6;
+    border-width: 1px;
+    overflow: scroll;
+}
+
+#doc-mid::-webkit-scrollbar {
+    width : 10px;
+    height: 1px;
+}
+#doc-mid::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius   : 10px;
+    background-color: #87ceeb;
+    background-image: -webkit-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent
+    );
+}
+#doc-mid::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background   : #ededed;
+    border-radius: 10px;
+}
+
+#doc-right {
+    float: right;
+    min-height: 800px;
+    max-height: 800px;
+    width: 800px;
+    background-color: #ffffff;
+}
+
+#footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.3rem 0;
+    color: #9e9ea6;
+}
